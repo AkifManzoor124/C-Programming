@@ -1,4 +1,9 @@
 # depslib dependency file v1.0
-1575817072 source:c:\users\akif manzoor\desktop\development\c-programming\hello world\hello.c
+1575817553 source:c:\users\akif manzoor\desktop\development\c-programming\hello world\hello.c
+	<stdio.h>
+
+1575817849 source:c:\users\akif manzoor\desktop\development\c-programming\hello world\main.c
+
+1575817945 source:c:\users\akif manzoor\desktop\development\c-programming\hello world\input.c
 	<stdio.h>
 
