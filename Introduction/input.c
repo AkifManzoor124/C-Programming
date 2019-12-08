@@ -2,13 +2,20 @@
 
 //definition of input function
 int input(){
-    int value;
-    //prompting the user for input of integer value
-    printf("Choose an integer for variable 'value':");
-    //receiving the input from user and storing at memory location &value
-    scanf("%d", &value);
-    //printing the value of variable "value"
-    printf("The chosen integer value of variable 'value' is %d\n", value);
+    int addend1;
+    int addend2;
+    int sum;
+    //prompting the user for input of addend1
+    printf("Choose an integer for the first addend1:");
+    //receiving the input from user and storing at memory location &addend1
+    scanf("%d", &addend1);
+    printf("Choose an integer for the first addend2:");
+    //receiving the input from user and storing at memory location &addend1
+    scanf("%d", &addend2);
+    //printing the value of variable "sum"
+    printf("The value of addend1 is: %d\n", addend1);
+    printf("The value of addend2 is: %d\n", addend2);
+    printf("The sum of addend1 and addend2 is: %d\n", addend1 + addend2);
     return 0;
 }
 
@@ -41,7 +48,4 @@ int multipleinputs(){
     scanf("%d%f", &a, &b);
     printf("You entered %d and %f", a, b);
     return 0;
-
-
-
 }
