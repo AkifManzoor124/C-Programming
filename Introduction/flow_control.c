@@ -98,3 +98,69 @@ int do_while_example()
     return 0;
 }
 
+//program to sum a max of 10 numbers
+//if the user enters a negative number, end the loop
+//if the user enters 0, continue to next loop
+int break_continue_example(){
+
+    int num;
+    int sum = 0;
+
+    int i;
+    while(i != 10)
+    {
+        printf("Please enter a number: ");
+        scanf("%d",&num);
+        if(num < 0){
+            printf("You entered a negative number\nExiting\n");
+            break;
+        }
+        if(num == 0){
+            printf("You entered a 0\nMoving to next loop\n");
+            continue;
+        }
+        sum += num;
+        i++;
+    }
+    printf("sum: %d",sum);
+
+    return 0;
+}
+
+//A calculator with operations +, -, /, and *
+//Using switch cases for the operations
+int switch_calculator_example()
+{
+    double a;
+    double b;
+    char operation;
+
+    printf("Pick a value for a: ");
+    scanf(" %lf",&a);
+
+    printf("\nPick a value for b: ");
+    scanf(" %lf",&b);
+
+    printf("\nPlease pick an operation to perform: ");
+    scanf(" %c",&operation);
+
+    switch(operation)
+    {
+        case '+':
+            printf("%lf + %lf = %lf" ,a, b, a+b);
+            break;
+        case '-':
+            printf("%lf + %lf = %lf" ,a, b, a-b);
+            break;
+        case '/':
+            printf("%lf + %lf = %lf" ,a, b, a/b);
+            break;
+        case '*':
+            printf("%lf + %lf = %lf" ,a, b, a*b);
+            break;
+        default:
+            printf("\nInvalid Operation");
+    }
+
+    return 0;
+}
