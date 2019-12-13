@@ -15,11 +15,12 @@ int main(){
     //while_example();
     //do_while_example();
     //break_continue_example();
-    switch_calculator_example();
+    //switch_calculator_example();
 
     //Functions
 
     //Arrays
+    array_example1();
 
     //C Pointer
 
